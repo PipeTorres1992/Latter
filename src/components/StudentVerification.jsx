@@ -5,7 +5,6 @@ import StudentInfoTable from './studentVerification/StudentInfoTable';
 import Footer from './studentVerification/Footer';
 
 const StudentVerification = () => {
-
   return (
     <>
       <Header />
