@@ -1,9 +1,10 @@
 import React from 'react';
-import { Routes, Route, } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import StudentVerification from './components/StudentVerification';
 import './App.css';
 
-// Component to handle the redirect
+/*
+// -- Código de redirección anterior comentado --
 const HomeRedirect = () => {
   React.useEffect(() => {
     window.location.href = 'https://elischools.com/';
@@ -11,8 +12,22 @@ const HomeRedirect = () => {
 
   return <div>Redirecting to elischools.com...</div>;
 };
+*/
 
-// Component for the 404 Not Found page
+// Nuevo componente Home para la prueba
+const Home = () => {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Página de Prueba</h1>
+      <p>Haz clic en el botón para ir a la página de verificación.</p>
+      <Link to="/elischools.com/verification/VQkdqi21q12/">
+        <button>Ir a la Verificación</button>
+      </Link>
+    </div>
+  );
+};
+
+// Componente para la página 404 Not Found
 const NotFound = () => {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
@@ -25,8 +40,9 @@ const NotFound = () => {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomeRedirect />} />
-      <Route path="/elischools/verification/VQkdqi21q12" element={<StudentVerification />} />
+      {/* <Route path="/" element={<HomeRedirect />} /> */}
+      <Route path="/" element={<Home />} />
+      <Route path="/elischools.com/verification/VQkdqi21q12/" element={<StudentVerification />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
