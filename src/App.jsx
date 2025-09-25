@@ -26,7 +26,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomeRedirect />} />
-      <Route path="/elischools.com/verification/VQkdqi21q12/" element={<StudentVerification />} />
+      <Route path="/verification/VQkdqi21q12/" element={<StudentVerification />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
