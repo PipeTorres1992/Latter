@@ -32,11 +32,11 @@ const StudentInfoTable = () => {
             </tr>
             <tr>
                 <td>Arrival Date</td>
-                <td id="arrival_date">05/Oct/2025</td>
+                <td id="arrival_date">09/Nov/2025</td>
             </tr>
             <tr>
                 <td>Departure Date</td>
-                <td id="departure_date">04/Jun/2026</td>
+                <td id="departure_date">04/Jul/2026</td>
             </tr>
             <tr>
                 <td>Course Name</td>
@@ -44,12 +44,12 @@ const StudentInfoTable = () => {
             </tr>
             <tr>
                 <td>Start Date Course</td>
-                <td id="start_date_course">06/Oct/2025</td>
+                <td id="start_date_course">10/Nov/2025</td>
             </tr>
 
             <tr>
                 <td>End Date Course</td>
-                <td id="end_date_course">19/Mar/2026</td>
+                <td id="end_date_course">23/Apr/2026</td>
             </tr>
         </tbody>
     </table>
